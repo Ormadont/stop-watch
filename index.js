@@ -25,7 +25,7 @@ class StopWatch {
     }
     this.#started = false
     const endTime = Date.now();
-    this.#duration = (this.#startTime - endTime) / 1000
+    this.#duration = (endTime - this.#startTime) / 1000
   }
 }
 
